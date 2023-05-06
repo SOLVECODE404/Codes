@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<center>
+    <style>
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            color: #000;
+            display: block;
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+
+        .grid {
+            height: 23px;
+            position: relative;
+            bottom: 4px;
+        }
+
+        .signbutton {
+            background-color: #4885ed;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 7px 10px;
+            position: relative;
+            bottom: 7px;
+            font-weight: bold;
+        }
+
+        .bar {
+            margin: 20px;
+            width: 575px;
+            border-radius: 30px;
+            border: 1px solid #dcdcdc;
+        }
+
+        .bar:hover {
+            box-shadow: 1px 1px 8px 1px #dcdcdc;
+        }
+
+        .bar:focus-within {
+            box-shadow: 1px 1px 8px 1px #dcdcdc;
+            outline: none;
+        }
+
+        .searchbar {
+            height: 45px;
+            border: none;
+            width: 500px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .voice {
+            height: 20px;
+            position: relative;
+            top: 5px;
+            left: 10px;
+        }
+
+        .googlesearchbutton {
+            font-size: 12px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            padding: 0.5rem;
+            top: 57%;
+            border-radius: 0.5rem;
+            left: 50%;
+            transform: translate(-50%, -70%);
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        /* .searchbardown {
+            display: flex;
+            margin-left: 600px;
+            margin-top: 40px;
+            box-align: center;
+        } */
+
+        .googlesearch {
+            background-color: rgb(7, 0, 0);
+            color: rgb(0, 0, 0);
+            margin-right: 20px;
+        }
+
+        .googlesearch :hover {
+            cursor: pointer;
+            border: 2px solid grey;
+        }
+
+        h3 {
+
+            animation-name: slidein;
+            animation-iteration-count: infinte;
+
+        }
+        input {
+  border: none;
+  width: 500px;
+  height: 1rem;
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
+  outline: none;
+      }
+.searchBtn {
+    width: 140px;
+    border-radius: 20px;
+    left: 200px;
+    height: 50px;
+}
+
+        @keyframes slidein {
+            0% {
+                margin-left: 0%;
+            }
+
+            50% {
+                margin-left: 300px;
+            }
+
+            100% {
+                margin-left: 0%;
+            }
+        }
+    </style>
+    <head>
+        <title>Google</title>
+        <link rel="icon" type="image/x-icon"
+            href="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" />
+        <ul>
+            <li><a class="links" href="https://accounts.google.com"><button class="signbutton" type="button">Sign
+                        in</button></a></li>
+            <li><a href="https://www.google.co.in/imghp?hl=en&tab=ri&ogbl">Images</a></li>
+            <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a></li>
+        </ul><br><br>
+    </head>
+
+    <body>
+        <a href="https://www.google.com/doodles/2022-world-cup-opening-day">
+            <img src="https://lh3.googleusercontent.com/p3IWTgtu8QV4BTkbcGoZgD8DzY4SqdqIq7tqJxXvPzjBHmBxX6Y9_JS8kWucMVv6mPwb0vcGahzwRSQYc49yBaHolbL0W6wfEXjfFYpuPtuPgnhuACuFXA"></a>
+        <div class="bar">
+            <input class="querys" type="text" id="inputBox"  title="Search" placeholder="search google or type a url">
+            <!-- <a href="#"> <img class="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" -->
+                    <!-- title="Search by Voice"></a> -->
+        </div>
+        <div class="searchbardown">
+                <button class="searchBtn">
+                    Google Search
+                </button>
+            </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
+</center>
