@@ -2,74 +2,38 @@
 
 int main()
 {
-    int year, month;
-    scanf("%d %d", &month, &year);
+    int rows, i, j, k;
 
-    int days = 0;
-    if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0)
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+
+    for (i = 1; i <= rows; i++)
     {
-        switch (month)
-        {
-        case 12:
-            days += 31;
-        case 11:
-            days += 30;
-        case 10:
-            days += 31;
-        case 9:
-            days += 30;
-        case 8:
-            days += 31;
-        case 7:
-            days += 31;
-        case 6:
-            days += 30;
-        case 5:
-            days += 31;
-        case 4:
-            days += 30;
-        case 3:
-            days += 31;
-        case 2:
-            days += 29;
-        case 1:
-            days += 31;
-        default:
-            break;
-        }
-    }
-    else
-    {
-        switch (month)
-        {
-        case 12:
-            days += 31;
-        case 11:
-            days += 30;
-        case 10:
-            days += 31;
-        case 9:
-            days += 30;
-        case 8:
-            days += 31;
-        case 7:
-            days += 31;
-        case 6:
-            days += 30;
-        case 5:
-            days += 31;
-        case 4:
-            days += 30;
-        case 3:
-            days += 31;
-        case 2:
-            days += 28;
-        case 1:
-            days += 31;
-        default:
-            break;
-        }
+        for (j = 1; j <= i; j++)
+            printf("*");
+
+        for (k = 1; k <= (rows - i) * 2; k++)
+            printf(" ");
+
+        for (j = 1; j <= i; j++)
+            printf("*");
+
+        printf("\n");
     }
 
-    printf("Days: %d\n", days);
+    for (i = rows; i >= 1; i--)
+    {
+        for (j = 1; j <= i; j++)
+            printf("*");
+
+        for (k = 1; k <= (rows - i) * 2; k++)
+            printf(" ");
+
+        for (j = 1; j <= i; j++)
+            printf("*");
+
+        printf("\n");
+    }
+
+    return 0;
 }
