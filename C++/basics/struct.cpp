@@ -1,5 +1,28 @@
 #include<iostream>
 using namespace std;
+// struct values{
+//     char booktitle[10];
+//     char bookauthor[10];
+//     int bookprice;
+// };
+// int main(){
+//     int n;
+//     cin>>n;
+//     struct values s[n];
+    
+//     for(int i=0;i<n;i++){
+//         cin>>s[i].bookauthor;
+//         cin>>s[i].booktitle;
+//         cin>>s[i].bookprice;
+//         }
+//         for(int i=0;i<n;i++){
+//         cout<<"Author name is:"<<s[i].bookauthor<<endl;
+//         cout<<"Bookprice is:"<<s[i].bookprice<<endl; 
+//         cout<<"Bookname is:"<<s[i].booktitle<<endl; 
+// }
+// }
+
+
 // struct values
 //     {
 //         float radius;
@@ -57,10 +80,12 @@ using namespace std;
 //     cin>>b;
 //     cin>>c;
 
+
 //     if (a<=20000){
 //         b=a*Factor*b*c;
 //     }
 //     cout<<b;
+// }
 
 
 // Array use in structures ...

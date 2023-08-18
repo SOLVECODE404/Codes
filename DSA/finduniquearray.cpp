@@ -16,6 +16,6 @@ int main(){
                 }
             }
         }
-        if(count==0)cout<<"The element that is unique is:"<<arr[i]<<endl;
+        if(count>0)cout<<"The element that is unique is:"<<arr[i]<<endl;
     }
 }
