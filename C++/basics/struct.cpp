@@ -158,3 +158,82 @@ using namespace std;
 //     cout<<ptr->rollno;
 //     cout<<" "<<ptr->marks<<endl;
 // }
+// struct employee{
+//     int id;
+//     char name[5];
+// };
+// struct address{
+//     int house_no;
+//     int street_no;
+//     int location_cordinates;
+//     struct employee d;
+// };
+// int main(){
+//     struct address s[2];
+//     for(int i=0;i<2;i++){
+//     cin>>s[i].d.id;
+//     cin>>s[i].d.name;
+//     cin>>s->house_no;
+//     cin>>s->location_cordinates;
+//     cin>>s->street_no;
+// }
+//     for(int i=0;i<2;i++){
+//         for(int j=0;j<2;j++){
+//             int distance=s[j]->location_cordinates-s[i]->location_cordinates;
+//         }
+//     }
+// }
+#include<vector>
+#include<bits/stdc++.h>
+struct students{
+    char name[20];
+    int rollno;
+}student;
+typedef struct marks{
+    int hindi;
+    int maths;
+    int sanskrit;
+    int eng;
+    int sst;
+    struct students s;
+}k;
+int main(){
+    struct marks a[3];
+    vector<int>ans;
+    for (int i=0;i<3;i++){
+    cin>>a[i].s.name;
+    cin>>a[i].s.rollno;
+    cin>>a[i].eng;
+    cin>>a[i].hindi;
+    cin>>a[i].maths;
+    }
+    // int sum=0,i;
+    // for( i=0;i<3;i++){
+    //     sum=a[i].eng+a[i].hindi+a[i].maths;
+    //     k=sum;
+    //     if(k!=0){
+    //     ans.push_back(k);
+    //     }
+    // }
+    // int maxElementIndex = max_element(ans.begin(),ans.end()) - ans.begin();
+    // cout<<"Winner is :->"<<a[maxElementIndex].s.name<<" and the score is->"<<*max_element(ans.begin(),ans.end())<<endl;
+    int sum=0,k,index;
+    int arr[3];
+    for(int i=0;i<3;i++){
+        sum=a[i].eng+a[i].hindi+a[i].maths;
+        k=sum;
+        if(k!=0){
+            arr[i]=k;
+        }
+        
+    }
+    int max=INT8_MIN;
+    for(int i=0;i<3;i++){
+            index=-1;
+            if(max<arr[i]){
+                max=arr[i];
+                index=i;
+            }
+        }
+        cout<<"THe topper is:->"<<a[index].s.name<<" and marks is:"<<max<<endl;
+}

@@ -10,4 +10,4 @@ struct abc{
 int main(){
     struct abc a;
     cout<<sizeof(a)<<endl;
-}
+}     
