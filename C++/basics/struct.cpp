@@ -15,7 +15,8 @@ using namespace std;
 //         cin>>s[i].booktitle;
 //         cin>>s[i].bookprice;
 //         }
-//         for(int i=0;i<n;i++){
+//         for(int i=0;i<n;i++        return val;
+){
 //         cout<<"Author name is:"<<s[i].bookauthor<<endl;
 //         cout<<"Bookprice is:"<<s[i].bookprice<<endl; 
 //         cout<<"Bookname is:"<<s[i].booktitle<<endl; 

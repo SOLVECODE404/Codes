@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
-#pragma pack(1)
+// #pragma pack(1)
 
 struct abc{
     char a;
-    char b;
     int c;
+    char b;
 };
 int main(){
     struct abc a;
