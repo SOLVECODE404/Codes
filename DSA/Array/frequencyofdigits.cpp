@@ -22,22 +22,29 @@ void frequency(int arr[],int n){
             arr1.push_back(a);
         }
 }
-for (int k = 0; k < arr1.size(); k++)
+// for (int k = 0; k < arr1.size(); k++)
+//         {
+//             cout<<arr1[k]<<" "<<endl;
+//         }for (int k = 0; k < arr1.size(); k++)
+//         {
+//             cout<<arr1[k]<<" "<<endl;
+//         }
+bool t = false;
+for (int m = 0; m < arr1.size(); m++)
+{
+    for (int l = 0; l < arr1.size(); l++)
+    {
+        if (m != l)
         {
-            cout<<arr1[k]<<" "<<endl;
-        }
-        bool t=false;
-        for(int m=0;m<arr1.size();m++){
-            for(int l=0;l<arr1.size();l++){
-                if(m!=l){
-                    if(arr1[m]==arr1[l]){
-                        t=true;
-                    }
-                }
+            if (arr1[m] == arr1[l])
+            {
+                t = true;
             }
         }
-        if(t==false)cout<<"unique"<<endl;
-        else cout<<"not unique";
+    }
+        }
+        // if(t==false)cout<<"unique"<<endl;
+        // else cout<<"not unique";
 };
 int main(){
     int arr[]={10,10,10,2,2,3,3,3,1};
